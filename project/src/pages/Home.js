@@ -1,5 +1,7 @@
 import React from 'react'
 import logo from '../assests/logo/black-logo.svg'
+import Male30 from '../assests/male/male-30.jpg'
+
 const Home = () => {
   return (
    <section className='flex w-full relative h-screen mt-16'>
@@ -331,13 +333,41 @@ const Home = () => {
                             <div className='flex flex-row items-start space-x-4'> 
                               <div className='relative'>
                                 <span className='flex shrink-0 overflow-hidden rounded-full w-[52px] h-[52px] relative'>
-
+                                  <img className='aspect-square h-full w-full' src={Male30}></img>
                                 </span>
+                                <div className='rounded-full p-1 w-4 h-4 border-white border-[3px] absolute bottom-0 right-1 bg-green-500'></div>
+                              </div>
+
+                              <div className=''>
+                                <h3 className='font-semibold leading-none tracking-tight'>
+                                Alex
+                                Dupont
+                                </h3>
+                                <p className='text-muted-foreground text-[0.76rem]'>
+                                VP of Sales Operations
+                                @  CustomerCenter
+                                </p>
+                               
+                               {/* cold call */}
+                                <div >
+                                  <div className='flex flex-wrap mt-2 space-x-1'>
+                                   <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 mt-1'> Cold Call</div>
+                                    <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground mt-1'> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain w-3 h-3 mr-1"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"></path><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"></path><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path><path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path><path d="M19.938 10.5a4 4 0 0 1 .585.396"></path><path d="M6 18a4 4 0 0 1-1.967-.516"></path><path d="M19.967 17.484A4 4 0 0 1 18 18"></path></svg>Rude but Less Inquisitive
+                                    </div>
+                                   
+                                   <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80 mt-1'>Book Rate:10.1%</div>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
+
+                          <div className='p-6 pt-0'></div>
                         </div>
                       </div>
+
+                      {/*  */}
                     </div>
                    </div>
                   </div>
