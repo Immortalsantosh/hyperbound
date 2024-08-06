@@ -1,6 +1,16 @@
 import React from 'react'
 import logo from '../assests/logo/black-logo.svg'
+
 import Male30 from '../assests/male/male-30.jpg'
+import Male15 from '../assests/male/male-15.jpg'
+import venkat from '../assests/male/venkat.jpg'
+import aaron from '../assests/male/aaron.jpg'
+
+import belinda from '../assests/female/belinda.jpg'
+import jane from '../assests/female/jane.png'
+import sarah from '../assests/female/sarah.png'
+import female36 from '../assests/female/female-36.jpg'
+
 
 const Home = () => {
   return (
@@ -141,7 +151,7 @@ const Home = () => {
             <div data-state="open" id="radix-:rd:" >
               <ul>
                 <li className='px-2 py-[7px] mb-[2px] z-40 ml-6 text-[#2e3035] rounded-lg hover:bg-[#EDEDED] hover:duration-200 duration-300 hover:text-foreground'>
-                  <a className='flex justify-start items-center space-x-2'>
+                  <a className='flex justify-start items-center space-x-2' href>
                     <div className='flex items-center justify-center'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-4 h-4"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                     </div>
@@ -278,7 +288,7 @@ const Home = () => {
                          <nav aria-label="breadcrumb">
                           <ol className='flex flex-wrap items-center gap-1.5 break-words text-sm text-muted-foreground sm:gap-2.5'>
                             <li className='inline-flex items-center gap-1.5'>
-                             <a className='transition-colors hover:text-foreground'>Buyer Bots</a>
+                             <a className='transition-colors hover:text-foreground' href>Buyer Bots</a>
                             </li>
                             <li role="presentation" aria-hidden="true" className='[&>svg]:size-3.5'>
                             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.1584 3.13508C6.35985 2.94621 6.67627 2.95642 6.86514 3.15788L10.6151 7.15788C10.7954 7.3502 10.7954 7.64949 10.6151 7.84182L6.86514 11.8418C6.67627 12.0433 6.35985 12.0535 6.1584 11.8646C5.95694 11.6757 5.94673 11.3593 6.1356 11.1579L9.565 7.49985L6.1356 3.84182C5.94673 3.64036 5.95694 3.32394 6.1584 3.13508Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
@@ -307,7 +317,7 @@ const Home = () => {
                    <div className='flex flex-col pt-4 px-4 border-r w-full md:w-[475px]'>
                     <div className='flex'>
                       <div className='flex-1'>
-                       <input placeholder='Search buyer bots by name, job title, or company...'className='flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 max-w-md' value></input>
+                       <input  placeholder =" Search buyer bots by name, job title, or company..." className='flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 max-w-md' ></input>
                       </div>
                       <div className=''>
                         <button className='flex h-9 w-full items-center justify-between whitespace-nowrap rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1'>
@@ -333,7 +343,7 @@ const Home = () => {
                             <div className='flex flex-row items-start space-x-4'> 
                               <div className='relative'>
                                 <span className='flex shrink-0 overflow-hidden rounded-full w-[52px] h-[52px] relative'>
-                                  <img className='aspect-square h-full w-full' src={Male30}></img>
+                                  <img alt=" male"  className='aspect-square h-full w-full' src={Male30}></img>
                                 </span>
                                 <div className='rounded-full p-1 w-4 h-4 border-white border-[3px] absolute bottom-0 right-1 bg-green-500'></div>
                               </div>
@@ -368,6 +378,323 @@ const Home = () => {
                       </div>
 
                       {/*  */}
+                      <div>
+                        <div className='rounded-xl border bg-card text-card-foreground w-full md:w-[430px] ml-0 flex items-center relative shadow-sm transition-shadow duration-300 cursor-pointer hover:shadow-xl'>
+                          <button  aria-expanded="false" id="radix-:rq:" aria-haspopup="menu" data-state="closed" className='inline-flex items-center justify-center whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-muted-foreground/10 hover:text-accent-foreground text-xs w-8 h-8 rounded-full p-0 absolute top-4 right-4'>
+                            <span className='sr-only'>Open menu</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical h-4 w-4"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                          </button>
+
+                          <div className='space-y-1.5 p-6 flex flex-col py-4'>
+                            <div className='flex flex-row items-start space-x-4'> 
+                              <div className='relative'>
+                                <span className='flex shrink-0 overflow-hidden rounded-full w-[52px] h-[52px] relative'>
+                                  <img alt=" male"  className='aspect-square h-full w-full' src={Male15}></img>
+                                </span>
+                                <div className='rounded-full p-1 w-4 h-4 border-white border-[3px] absolute bottom-0 right-1 bg-green-500'></div>
+                              </div>
+
+                              <div className=''>
+                                <h3 className='font-semibold leading-none tracking-tight'>
+                                Richard
+                                Morrison
+                                </h3>
+                                <p className='text-muted-foreground text-[0.76rem]'>
+                                Director of Customer Support
+                                @  Bolthouse
+                                </p>
+                               
+                               {/* cold call */}
+                                <div >
+                                  <div className='flex flex-wrap mt-2 space-x-1'>
+                                   <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 mt-1'> Cold Call</div>
+                                    <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground mt-1'> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain w-3 h-3 mr-1"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"></path><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"></path><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path><path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path><path d="M19.938 10.5a4 4 0 0 1 .585.396"></path><path d="M6 18a4 4 0 0 1-1.967-.516"></path><path d="M19.967 17.484A4 4 0 0 1 18 18"></path></svg>Rude but Less Inquisitive
+                                    </div>
+                                   
+                                   <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80 mt-1'>Book Rate:9.2%</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className='p-6 pt-0'></div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <div className='rounded-xl border bg-card text-card-foreground w-full md:w-[430px] ml-0 flex items-center relative shadow-sm transition-shadow duration-300 cursor-pointer hover:shadow-xl'>
+                          <button  aria-expanded="false" id="radix-:rq:" aria-haspopup="menu" data-state="closed" className='inline-flex items-center justify-center whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-muted-foreground/10 hover:text-accent-foreground text-xs w-8 h-8 rounded-full p-0 absolute top-4 right-4'>
+                            <span className='sr-only'>Open menu</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical h-4 w-4"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                          </button>
+
+                          <div className='space-y-1.5 p-6 flex flex-col py-4'>
+                            <div className='flex flex-row items-start space-x-4'> 
+                              <div className='relative'>
+                                <span className='flex shrink-0 overflow-hidden rounded-full w-[52px] h-[52px] relative'>
+                                  <img alt=" male"  className='aspect-square h-full w-full' src={aaron}></img>
+                                </span>
+                                <div className='rounded-full p-1 w-4 h-4 border-white border-[3px] absolute bottom-0 right-1 bg-green-500'></div>
+                              </div>
+
+                              <div className=''>
+                                <h3 className='font-semibold leading-none tracking-tight'>
+                                Aaron
+                                Smith
+                                </h3>
+                                <p className='text-muted-foreground text-[0.76rem]'>
+                                Marketing Ops Manager
+                                @  James Enterprises
+                                </p>
+                               
+                               {/* cold call */}
+                                <div >
+                                  <div className='flex flex-wrap mt-2 space-x-1'>
+                                   <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 mt-1'> Cold Call</div>
+                                    <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground mt-1'> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain w-3 h-3 mr-1"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"></path><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"></path><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path><path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path><path d="M19.938 10.5a4 4 0 0 1 .585.396"></path><path d="M6 18a4 4 0 0 1-1.967-.516"></path><path d="M19.967 17.484A4 4 0 0 1 18 18"></path></svg>Rude
+                                    </div>
+                                   
+                                   <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80 mt-1'>Book Rate:10.4%</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className='p-6 pt-0'></div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <div className='rounded-xl border bg-card text-card-foreground w-full md:w-[430px] ml-0 flex items-center relative shadow-sm transition-shadow duration-300 cursor-pointer hover:shadow-xl'>
+                          <button  aria-expanded="false" id="radix-:rq:" aria-haspopup="menu" data-state="closed" className='inline-flex items-center justify-center whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-muted-foreground/10 hover:text-accent-foreground text-xs w-8 h-8 rounded-full p-0 absolute top-4 right-4'>
+                            <span className='sr-only'>Open menu</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical h-4 w-4"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                          </button>
+
+                          <div className='space-y-1.5 p-6 flex flex-col py-4'>
+                            <div className='flex flex-row items-start space-x-4'> 
+                              <div className='relative'>
+                                <span className='flex shrink-0 overflow-hidden rounded-full w-[52px] h-[52px] relative'>
+                                  <img alt=" male"  className='aspect-square h-full w-full' src={jane}></img>
+                                </span>
+                                <div className='rounded-full p-1 w-4 h-4 border-white border-[3px] absolute bottom-0 right-1 bg-green-500'></div>
+                              </div>
+
+                              <div className=''>
+                                <h3 className='font-semibold leading-none tracking-tight'>
+                                Jane
+                                Bowen
+                                </h3>
+                                <p className='text-muted-foreground text-[0.76rem]'>
+                                Director of Sales
+                                @  Agile Solutions
+                                </p>
+                               
+                               {/* cold call */}
+                                <div >
+                                  <div className='flex flex-wrap mt-2 space-x-1'>
+                                   <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 mt-1'> Cold Call</div>
+                                    <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground mt-1'> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain w-3 h-3 mr-1"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"></path><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"></path><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path><path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path><path d="M19.938 10.5a4 4 0 0 1 .585.396"></path><path d="M6 18a4 4 0 0 1-1.967-.516"></path><path d="M19.967 17.484A4 4 0 0 1 18 18"></path></svg>Rude
+                                    </div>
+                                   
+                                   <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80 mt-1'>Book Rate:15.5%</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className='p-6 pt-0'></div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <div className='rounded-xl border bg-card text-card-foreground w-full md:w-[430px] ml-0 flex items-center relative shadow-sm transition-shadow duration-300 cursor-pointer hover:shadow-xl'>
+                          <button  aria-expanded="false" id="radix-:rq:" aria-haspopup="menu" data-state="closed" className='inline-flex items-center justify-center whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-muted-foreground/10 hover:text-accent-foreground text-xs w-8 h-8 rounded-full p-0 absolute top-4 right-4'>
+                            <span className='sr-only'>Open menu</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical h-4 w-4"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                          </button>
+
+                          <div className='space-y-1.5 p-6 flex flex-col py-4'>
+                            <div className='flex flex-row items-start space-x-4'> 
+                              <div className='relative'>
+                                <span className='flex shrink-0 overflow-hidden rounded-full w-[52px] h-[52px] relative'>
+                                  <img alt=" male"  className='aspect-square h-full w-full' src={belinda}></img>
+                                </span>
+                                <div className='rounded-full p-1 w-4 h-4 border-white border-[3px] absolute bottom-0 right-1 bg-green-500'></div>
+                              </div>
+
+                              <div className=''>
+                                <h3 className='font-semibold leading-none tracking-tight'>
+                                Belinda
+                                Secas
+                                </h3>
+                                <p className='text-muted-foreground text-[0.76rem]'>
+                                VP of InfoSec
+                                @  Agile Solutions
+                                </p>
+                               
+                               {/* cold call */}
+                                <div >
+                                  <div className='flex flex-wrap mt-2 space-x-1'>
+                                   <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 mt-1'> Cold Call</div>
+                                    <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground mt-1'> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain w-3 h-3 mr-1"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"></path><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"></path><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path><path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path><path d="M19.938 10.5a4 4 0 0 1 .585.396"></path><path d="M6 18a4 4 0 0 1-1.967-.516"></path><path d="M19.967 17.484A4 4 0 0 1 18 18"></path></svg>Rude
+                                    </div>
+                                   
+                                   <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80 mt-1'>Book Rate:16.3%</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className='p-6 pt-0'></div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <div className='rounded-xl border bg-card text-card-foreground w-full md:w-[430px] ml-0 flex items-center relative shadow-sm transition-shadow duration-300 cursor-pointer hover:shadow-xl'>
+                          <button  aria-expanded="false" id="radix-:rq:" aria-haspopup="menu" data-state="closed" className='inline-flex items-center justify-center whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-muted-foreground/10 hover:text-accent-foreground text-xs w-8 h-8 rounded-full p-0 absolute top-4 right-4'>
+                            <span className='sr-only'>Open menu</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical h-4 w-4"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                          </button>
+
+                          <div className='space-y-1.5 p-6 flex flex-col py-4'>
+                            <div className='flex flex-row items-start space-x-4'> 
+                              <div className='relative'>
+                                <span className='flex shrink-0 overflow-hidden rounded-full w-[52px] h-[52px] relative'>
+                                  <img alt=" male"  className='aspect-square h-full w-full' src={venkat}></img>
+                                </span>
+                                <div className='rounded-full p-1 w-4 h-4 border-white border-[3px] absolute bottom-0 right-1 bg-green-500'></div>
+                              </div>
+
+                              <div className=''>
+                                <h3 className='font-semibold leading-none tracking-tight'>
+                                Venkat
+                                Natrajan
+                                </h3>
+                                <p className='text-muted-foreground text-[0.76rem]'>
+                                VP of HR
+                                @  James Enterprises
+                                </p>
+                               
+                               {/* cold call */}
+                                <div >
+                                  <div className='flex flex-wrap mt-2 space-x-1'>
+                                   <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 mt-1'> Cold Call</div>
+                                    <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground mt-1'> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain w-3 h-3 mr-1"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"></path><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"></path><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path><path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path><path d="M19.938 10.5a4 4 0 0 1 .585.396"></path><path d="M6 18a4 4 0 0 1-1.967-.516"></path><path d="M19.967 17.484A4 4 0 0 1 18 18"></path></svg>Rude
+                                    </div>
+                                   
+                                   <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80 mt-1'>Book Rate:15%</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className='p-6 pt-0'></div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <div className='rounded-xl border bg-card text-card-foreground w-full md:w-[430px] ml-0 flex items-center relative shadow-sm transition-shadow duration-300 cursor-pointer hover:shadow-xl'>
+                          <button  aria-expanded="false" id="radix-:rq:" aria-haspopup="menu" data-state="closed" className='inline-flex items-center justify-center whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-muted-foreground/10 hover:text-accent-foreground text-xs w-8 h-8 rounded-full p-0 absolute top-4 right-4'>
+                            <span className='sr-only'>Open menu</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical h-4 w-4"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                          </button>
+
+                          <div className='space-y-1.5 p-6 flex flex-col py-4'>
+                            <div className='flex flex-row items-start space-x-4'> 
+                              <div className='relative'>
+                                <span className='flex shrink-0 overflow-hidden rounded-full w-[52px] h-[52px] relative'>
+                                  <img alt=" male"  className='aspect-square h-full w-full' src={sarah}></img>
+                                </span>
+                                <div className='rounded-full p-1 w-4 h-4 border-white border-[3px] absolute bottom-0 right-1 bg-green-500'></div>
+                              </div>
+
+                              <div className=''>
+                                <h3 className='font-semibold leading-none tracking-tight'>
+                                Nicole
+                                Lieber
+                                </h3>
+                                <p className='text-muted-foreground text-[0.76rem]'>
+                                VP of Customer Success
+                                @  Agile Solutions
+                                </p>
+                               
+                               {/* cold call */}
+                                <div >
+                                  <div className='flex flex-wrap mt-2 space-x-1'>
+                                   <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 mt-1'> Cold Call</div>
+                                    <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground mt-1'> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain w-3 h-3 mr-1"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"></path><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"></path><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path><path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path><path d="M19.938 10.5a4 4 0 0 1 .585.396"></path><path d="M6 18a4 4 0 0 1-1.967-.516"></path><path d="M19.967 17.484A4 4 0 0 1 18 18"></path></svg>Rude
+                                    </div>
+                                   
+                                   <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80 mt-1'>Book Rate:22.3%</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className='p-6 pt-0'></div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <div className='rounded-xl border bg-card text-card-foreground w-full md:w-[430px] ml-0 flex items-center relative shadow-sm transition-shadow duration-300 cursor-pointer hover:shadow-xl'>
+                          <button  aria-expanded="false" id="radix-:rq:" aria-haspopup="menu" data-state="closed" className='inline-flex items-center justify-center whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-muted-foreground/10 hover:text-accent-foreground text-xs w-8 h-8 rounded-full p-0 absolute top-4 right-4'>
+                            <span className='sr-only'>Open menu</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical h-4 w-4"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                          </button>
+
+                          <div className='space-y-1.5 p-6 flex flex-col py-4'>
+                            <div className='flex flex-row items-start space-x-4'> 
+                              <div className='relative'>
+                                <span className='flex shrink-0 overflow-hidden rounded-full w-[52px] h-[52px] relative'>
+                                  <img alt=" male"  className='aspect-square h-full w-full' src={female36}></img>
+                                </span>
+                                <div className='rounded-full p-1 w-4 h-4 border-white border-[3px] absolute bottom-0 right-1 bg-green-500'></div>
+                              </div>
+
+                              <div className=''>
+                                <h3 className='font-semibold leading-none tracking-tight'>
+                                Anna
+                                Bowen
+                                </h3>
+                                <p className='text-muted-foreground text-[0.76rem]'>
+                                Director of Sales
+                                @  Innovative Leaders
+                                </p>
+                               
+                               {/* cold call */}
+                                <div >
+                                  <div className='flex flex-wrap mt-2 space-x-1'>
+                                   <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 mt-1'> Cold Call</div>
+                                    <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground mt-1'> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain w-3 h-3 mr-1"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"></path><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"></path><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path><path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path><path d="M19.938 10.5a4 4 0 0 1 .585.396"></path><path d="M6 18a4 4 0 0 1-1.967-.516"></path><path d="M19.967 17.484A4 4 0 0 1 18 18"></path></svg>Rude
+                                    </div>
+                                   
+                                   <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80 mt-1'>Book Rate:17.5%</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className='p-6 pt-0'></div>
+                        </div>
+                      </div>
+
+
+
                     </div>
                    </div>
                   </div>
