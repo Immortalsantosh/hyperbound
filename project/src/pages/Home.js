@@ -697,6 +697,94 @@ const Home = () => {
 
                     </div>
                    </div>
+
+                   {/* right side */}
+                   <div className='hidden md:flex flex-col items-center flex-grow'>
+                    <div className='pt-4 fixed z-0'>
+                      <div className='flex items-center justify-center mb-4 w-full'>
+                        <div className='flex flex-1 justify-between space-x-4'>
+                          <span data-state="closed" tabindex="0">
+                            <button className='inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-transparent shadow-sm hover:bg-accent hover:text-accent-foreground h-[34px] px-4 py-2' disabled>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-pen w-4 h-4 mr-2"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.375 2.625a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4Z"></path></svg>
+                            Customize buyer bot
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock w-4 h-4 ml-2"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                            </button>
+                          </span>
+                          <a className='h-min' href>
+                            <button className='inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-[34px] px-4 py-2'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout-list w-4 h-4 mr-2"><rect width="7" height="7" x="3" y="3" rx="1"></rect><rect width="7" height="7" x="3" y="14" rx="1"></rect><path d="M14 4h7"></path><path d="M14 9h7"></path><path d="M14 15h7"></path><path d="M14 20h7"></path></svg>
+                            View calls
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div>
+                        <div className='will-change: auto; transform: none;'>
+                          <div className='rounded-xl border bg-card text-card-foreground w-full md:w-[450px] shadow-md'>
+                            <div className='flex flex-col space-y-1.5 p-6'>
+                             <h3 className='font-semibold leading-none tracking-tight'>AI Roleplay Instructions</h3>
+                             <p className='text-sm text-primary'>Alex is having issues with his current contact data provider, chat with him and try to sell him a data solution.</p>
+                            </div>
+
+                            <div className='p-6 pt-0 flex items-center justify-center'>
+                              <div className='flex flex-col items-center text-center'>
+                                <div className='relative mb-4 '>
+                                  <div className='animation_animateCircle__lBdoU w-32 h-32 opacity-0'>
+
+                                  </div>
+                                  {/* st=tyle  */}
+                                  <span className='relative flex h-32 w-32 shrink-0 overflow-hidden rounded-full ' >
+                                    <img alt='ok' src={Male30} className='aspect-square h-full w-full'></img>
+                                  </span>
+                                  <div className='rounded-full p-1 w-6 h-6 border-white border-[3px] absolute bottom-1 right-2 bg-green-500'></div>
+                                </div>
+                                <p className='text-lg'>
+                                  Alex
+                                  Dupont
+                                </p>
+                                <p className='text-md text-muted-foreground'>
+                                VP of Sales Operations
+                                @ 
+                                CustomerCenter
+                                </p>
+                                <div>
+                                  <div className='flex mt-2 space-x-1'>
+                                    <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 mt-1'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-snowflake mr-1 h-3 w-3"><line x1="2" x2="22" y1="12" y2="12"></line><line x1="12" x2="12" y1="2" y2="22"></line><path d="m20 16-4-4 4-4"></path><path d="m4 8 4 4-4 4"></path><path d="m16 4-4 4-4-4"></path><path d="m8 20 4-4 4 4"></path></svg>
+                                    Cold Call
+                                    </div>
+                                    
+                                    <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground mt-1'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain w-3 h-3 mr-1"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"></path><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"></path><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path><path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path><path d="M19.938 10.5a4 4 0 0 1 .585.396"></path><path d="M6 18a4 4 0 0 1-1.967-.516"></path><path d="M19.967 17.484A4 4 0 0 1 18 18"></path></svg>
+                                    Rude but Less Inquisitive
+                                    </div>
+                                    <div className='inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80'>
+                                    Book Rate:
+                                    10.1%
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+
+                            <div className='flex items-center p-6 pt-0'>
+                              <div className='flex w-full justify-between relative'>
+                                <span tabindex="0"  data-state="closed" className='w-full'>
+                                  <button  className=' bg-gradient-custom inline-flex items-center justify-center whitespace-nowrap font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary hover:bg-primary/90 px-8 w-full text-white hover:text-white shadow-md text-base h-[52px] rounded-2xl cursor-pointer drop-shadow-2xl hover:opacity-80 transition-opacity duration-200 border border-white/50'>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone mr-2 h-5 w-5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                  <span >Start Call</span>
+                                  </button>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className='Toastify'></div>
+                      </div>
+                    </div>
+                   </div>
                   </div>
                 </div>
 
