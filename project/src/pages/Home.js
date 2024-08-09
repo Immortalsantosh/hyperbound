@@ -13,10 +13,14 @@ import sarah from '../assests/female/sarah.png'
 import female36 from '../assests/female/female-36.jpg'
 
 function Home () {
-  const [selectedBuyer, setSelectedBuyer] = useState(null);
+  const [selectedBuyer, setSelectedBuyer] = useState(true);
+  const [isBuyerBotsVisible, setIsBuyerBotsVisible] = useState(false);
+  const [isCallHistoryVisible, setIsCallHistoryVisible] = useState(false);
+  const [isCallCoachingVisible, setIsCallCoachingVisible] = useState(false);
   
   const buyers = [
     {
+      id:1,
       name: "Alex Dupont",
       title: "VP of Sales Operations",
       company: "CustomerCenter",
@@ -95,7 +99,15 @@ function Home () {
   const handleBuyerSelect = (buyer) => {
     setSelectedBuyer(buyer);
   };
-
+  const toggleBuyerBots = () => {
+    setIsBuyerBotsVisible(!isBuyerBotsVisible);
+  };
+  const toggleCallHistory = () => {
+    setIsCallHistoryVisible(!isCallHistoryVisible);
+  };
+  const toggleCallCoaching = () => {
+    setIsCallCoachingVisible(!isCallCoachingVisible);
+  };
 
   return (
    <section className='flex w-full relative h-screen mt-16'>
@@ -143,13 +155,14 @@ function Home () {
            <div className='flex items-center justify-center'>
            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot w-4 h-4"><path d="M12 8V4H8"></path><rect width="16" height="12" x="4" y="8" rx="2"></rect><path d="M2 14h2"></path><path d="M20 14h2"></path><path d="M15 13v2"></path><path d="M9 13v2"></path></svg>
            </div>
-           <p className='text-md font-medium'>Buyer Bots</p>
+           <p className='text-md font-medium' onClick={toggleBuyerBots}>Buyer Bots</p>
            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-4 h-4"><path d="m6 9 6 6 6-6"></path></svg>
           </div>
          </button>
 
 
        {/* cold call */}
+       {isBuyerBotsVisible && (
          <div data-state="open">
           <ul>
             <li className='px-2 py-[7px] mb-[2px] z-40 ml-6 bg-[#EDEDED] rounded-lg text-[#2e3035]'>
@@ -215,8 +228,10 @@ function Home () {
             </li>
           </ul>
          </div>
+         )}
           </div>
         </div>
+      
 
         {/* call history */}
         <div data-state="open">
@@ -226,12 +241,13 @@ function Home () {
                 <div className='flex items-center justify-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout-list w-4 h-4"><rect width="7" height="7" x="3" y="3" rx="1"></rect><rect width="7" height="7" x="3" y="14" rx="1"></rect><path d="M14 4h7"></path><path d="M14 9h7"></path><path d="M14 15h7"></path><path d="M14 20h7"></path></svg>
                 </div>
-                <p className='text-md font-medium'>Call History</p>
+                <p className='text-md font-medium'  onClick={toggleCallHistory}>Call History</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-4 h-4"><path d="m6 9 6 6 6-6"></path></svg>
               </div>
             </button>
 
             {/* Simulated Calls style= transition-duration: 0s; animation-name: none; --radix-collapsible-content-height: 106px; --radix-collapsible-content-width: 237px; */}
+            {isCallHistoryVisible && (
             <div data-state="open" id="radix-:rd:" >
               <ul>
                 <li className='px-2 py-[7px] mb-[2px] z-40 ml-6 text-[#2e3035] rounded-lg hover:bg-[#EDEDED] hover:duration-200 duration-300 hover:text-foreground'>
@@ -271,6 +287,7 @@ function Home () {
                 </li>
               </ul>
             </div>
+            )}
           </div>
         </div>
 
@@ -334,10 +351,39 @@ function Home () {
                      <div className='flex items-center justify-center'>
                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book w-4 h-4"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>
                      </div>
-                     <p className='text-md font-medium'>Coaching</p>
+                     <p className='text-md font-medium' onClick={toggleCallCoaching}>Coaching</p>
                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4"><path d="m9 18 6-6-6-6"></path></svg>
                     </div>
                   </button>
+
+
+                  {isCallCoachingVisible && (
+                  <div className=''>
+                    <ul>
+                      <li className='px-2 py-[7px] mb-[2px] z-40 ml-6 text-[#2e3035] rounded-lg hover:bg-[#EDEDED] hover:duration-200 duration-300 hover:text-foregroundc'>
+                        <a className='flex justify-start items-center space-x-2' href>
+                          <div className='flex items-center justify-center'>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-notebook-tabs w-4 h-4"><path d="M2 6h4"></path><path d="M2 10h4"></path><path d="M2 14h4"></path><path d="M2 18h4"></path><rect width="16" height="20" x="4" y="2" rx="2"></rect><path d="M15 2v20"></path><path d="M15 7h5"></path><path d="M15 12h5"></path><path d="M15 17h5"></path></svg>
+                          </div>
+                          <p className='text-md font-medium'>Knowledge Gap</p>
+                        </a>
+                      </li>
+                      <li className='px-2 py-[7px] mb-[2px] z-40 ml-6 text-[#878789]'>
+                             <span tabindex="0" data-state="closed" disabled>
+                              <a className='flex justify-start items-center space-x-2 pointer-events-none' href>
+                                <div className='flex items-center justify-center'>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-list-todo w-4 h-4"><rect x="3" y="5" width="6" height="6" rx="1"></rect><path d="m3 17 2 2 4-4"></path><path d="M13 6h8"></path><path d="M13 12h8"></path><path d="M13 18h8"></path></svg>
+                                </div>
+                                <p className='text-md font-medium'>Assignments</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock w-4 h-4 text-[#878789]"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                              </a>
+                             </span>
+                      </li>
+                    </ul>
+                    
+                  </div>
+                  )}
+                  
 
                   {/* Integrations   /style=--radix-collapsible-content-height: 70px; --radix-collapsible-content-width: 237px; */}
                   <div data-state="closed" id="radix-:rk:" hidden> </div>
@@ -491,6 +537,9 @@ function Home () {
                           </a>
                         </div>
                       </div>
+
+                      
+
 
                       <div>
                         <div className='will-change: auto; transform: none;'>
